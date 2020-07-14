@@ -1,0 +1,597 @@
+
+body {
+  background: #fafafa;
+  color: #444;
+  font-family: "メイリオ", "meiryo", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+
+/***************** Header *********************/
+/*----------------------------
+
+NavBar
+
+------------------------------*/
+
+.navbar-brand.h1 {
+  color: white;
+  font-size: 2rem;
+  font-style: italic;
+  font-family: "Droid Serif", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link {
+  color: white;
+  font-size: 1.2rem;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover, .navbar-brand.h1:hover {
+  color: #ffcf23;
+}
+
+#mainNav .navbar-toggler {
+  position: relative;
+  padding: 0.75rem;
+  font-family: "Montserrat", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.75rem;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #ffcf23;
+  border: 0;
+}
+
+@media screen and (max-width: 559px) {
+  .navbar-brand.h1 {
+    font-size: 1.5rem;
+  }
+  #mainNav .navbar-toggler {
+    padding: 0.5rem;
+  }
+}
+
+/*----------------------------
+
+Scroll後Headerを小さく固定
+
+------------------------------*/
+
+#mainNav {
+  background: rgba(33, 37, 41, 0.5);
+  display: flex;
+  padding: 30px 20px;
+  position: fixed;
+  justify-content: space-between;
+  transition: .3s;
+  width: 100%;
+}
+
+#mainNav.transform {
+  background: rgba(33, 37, 41, 0.9);
+  padding: 0 20px;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+@media screen and (max-width: 559px) {
+  #mainNav {
+    padding: 20px;
+  }
+}
+
+/*----------------------------
+
+Header Image
+
+------------------------------*/
+
+.h-bg-fixed {
+  position: relative;
+}
+
+.h-bg-fixed img {
+  width: 100%;
+  height: 600px;
+  background-attachment: fixed;
+  object-fit: cover;
+}
+
+.h-bg-fixed p {
+  color: rgba(255, 231, 122, 0.9);
+  width: 70%;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 4px 4px 3px #3b3b3b;
+  text-align: center;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  font-family: "Droid Serif", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+@media screen and (max-width: 559px) {
+  .h-bg-fixed img {
+    height: 450px;
+  }
+  .h-bg-fixed .h-bg-text {
+    font-size: 2.0rem;
+  }
+  .h-bg-fixed p {
+    top: 85%;
+  }
+}
+
+/***************** Main Section *******************/
+/*----------------------------
+
+共斜めの背景
+
+------------------------------*/
+
+.section-wrapp, .section-wrapp02 {
+  position: relative;
+  overflow: hidden;
+  padding: 0 0 50px;
+}
+
+.section-wrapp::before, .section-wrapp02::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 120%;
+  margin: 3% -10% 0;
+  background:  #eee;
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  z-index: -1;
+}
+
+.section-wrapp::before {
+  top: 0;
+  height: 80%;
+  -webkit-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+.section-wrapp02::before {
+  top: 40px;
+  height: 110%;
+  -webkit-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+#page-services .container {
+  box-sizing: border-box;
+  margin-top: 50px;
+  padding: 30px 10px 0;
+}
+
+/*----------------------------
+
+Fade In
+
+------------------------------*/
+
+.fadein {
+  opacity : 0;
+  transform: translateY(20px);
+  transition: all 1s;
+}
+
+/*----------------------------
+
+共通
+
+------------------------------*/
+
+.section-title,
+h4 {
+  text-align: center;
+  font-weight: bold;
+  color: #444;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.section-title,
+h3 {
+  font-family: serif;
+}
+
+main p {
+  font-size: 16px;
+}
+
+/*----------------------------
+
+Services
+
+------------------------------*/
+
+.service-icon {
+  text-align: center;
+}
+
+#page-services {
+  margin-top: -30px;
+  padding-top: 30px;
+}
+
+/*----------------------------
+
+Works
+
+------------------------------*/
+
+#page-works .container {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0 auto;
+  padding: 100px 10px 50px;
+}
+
+.card-wrapper {
+  text-decoration: none;
+  color: #666;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow: hidden;
+  line-height: 2em;
+  margin-bottom: 20px;
+  position: relative;
+  box-shadow: 0 5px 10px #ccc;
+  background: linear-gradient(#fff, #eaeaea);
+  transition: ease .3s;
+}
+
+.card:hover {
+  color: #0e36ca;
+  box-shadow: 0 10px 20px #ccc;
+  transform: translateY(-5px);
+}
+
+.card-wrapper h4 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #0e36ca;
+}
+
+.card-01{
+  background-image: url(images/screencapture-test1.png);
+}
+.card-02 {
+  background-image: url(images/screencapture-test2.png);
+}
+.card-01,
+.card-02,
+.card-03 {
+  width: 100%;
+  height: 120px;
+  background-size: cover;
+}
+
+/*----------------------------
+
+Skils
+
+------------------------------*/
+
+#page-skils .container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+#page-skils .row {
+  display: flex;
+  justify-content: center;
+}
+
+.skil-logo {
+  display: inline-block;
+  text-align: center;
+}
+
+.skil-logo img {
+  width: 70px;
+}
+
+.skil-logo p {
+  color: #333;
+  font-weight: bold;
+}
+
+#page-skils {
+  margin-top: -50px;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 559px) {
+  .skil-logo img {
+    width: 50px;
+  }  
+}
+
+/*----------------------------
+
+About
+
+------------------------------*/
+
+.pf-img {
+  background-image: url("images/profile.JPG");
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.pf-img-mask {
+  background-image: radial-gradient(circle, transparent 65%, #eee 70%);
+  width: 300px;
+  height: 300px;
+}
+
+#page-about .profile {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 1px #cfcfcf;
+  border-radius: 8px;
+  vertical-align: middle;
+}
+
+#page-about .h3 {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 10px;
+  padding: 0 9px;
+  line-height: 1;
+  font-size: 28px;
+  background: #eee;
+  color: #0f40ac;
+  font-weight: bold;
+}
+
+#page-about p {
+  max-width: 700px;
+}
+
+.pf-text {
+  display: inline-block;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+#page-about p,
+.pf-text {
+  font-size: 18px;
+  line-height: 1.8rem;
+}
+
+.twitter {
+  text-align: center;
+}
+
+.profile a {
+  font-size: 14px;
+}
+
+#page-about {
+  margin-top: -10px;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 559px) {
+  #page-about p {
+    padding: 0 10px;
+  }
+  #page-about p,
+  .pf-text {
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
+}
+
+/*----------------------------
+
+Contact
+
+------------------------------*/
+
+#page-contact {
+  background-image: url(images/bram-naus-n8Qb1ZAkK88-unsplash.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: right top;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.bg-mask {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#page-contact .container {
+  background: rgba(255, 255, 255, 0.6);
+  width: 500px;
+  padding-bottom: 100px;
+}
+
+.form {
+  width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.form-content {
+  margin-bottom: 16px;
+}
+
+.form-btn {
+  background: linear-gradient(#6e6e6e, #474747);
+  color: white;
+  width: 250px;
+  padding: 16px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 559px) {
+  .form {
+    width: 100%;
+  }
+  #page-contact .container {
+    width: 100%;
+  }
+}
+
+/*----------------------------
+
+Page-Top-Buttun
+
+------------------------------*/
+
+#page-top-btn {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  right: 0;
+  bottom: 40px;
+  opacity: 0.8;
+}
+
+#page-top-btn a {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  text-decoration: none;
+  text-align: center;
+  color: #333;
+}
+
+#page-top-btn a::after {
+  content: 'PAGE TOP';
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  color: #333;
+}
+
+#page-top-btn a:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 559px) {
+  #page-top-btn {
+    width: 60px;
+    height: 60px;
+  }
+  #page-top-btn a {
+    width: 60px;
+    height: 60px;
+  }
+  #page-top-btn a::after {
+    display: none;
+  }
+  .fa-angle-double-up {
+    font-size: 28px;
+  }
+}
+
+/*----------------------------
+
+footer
+
+------------------------------*/
+
+footer {
+  font-size: 14px;
+  text-align: center;
+  background: rgba(5, 5, 5, 0.8);
+  color: #f5f5f5;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 559px) {
+  footer {
+    font-size: 12px;
+    font-weight: lighter;
+  }
+}
+
+/*----------------------------
+
+Material icons
+
+------------------------------*/
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  /* font-size: 24px;  推奨サイズ */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  width: 100%;
+  text-align: center;
+  /* WebKitブラウザサポート */
+  -webkit-font-smoothing: antialiased;
+  /* Chrome、Safariサポート */
+  text-rendering: optimizeLegibility;
+  /* Firefoxサポート */
+  -moz-osx-font-smoothing: grayscale;
+  /* IEサポート */
+  font-feature-settings: 'liga';
+}
+.material-icons.md-60 {
+  font-size: 60px;
+}
+.icons {
+  margin: 0 auto;
+  width: 100%;
+  height: 60px;
+}
+
