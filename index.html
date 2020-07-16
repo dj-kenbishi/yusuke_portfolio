@@ -9,17 +9,24 @@
   <link rel="icon" type="image/x-icon" href="" />
   <!-- Font Awesome icons (free version)-->
   <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+
   <!-- CDNJS Font-Awesome -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"
     integrity="sha512-M+hXwltZ3+0nFQJiVke7pqXY7VdtWW2jVG31zrml+eteTP7im25FdwtLhIBTWkaHRQyPrhO2uy8glLMHZzhFog=="
     crossorigin="anonymous"></script>
+
   <!-- Google fonts Material icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <!-- Google fonts-->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
     type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -113,15 +120,16 @@
       <div class="container">
         <h2 class="section-title mb-5">WORKS</h2>
         <div class="row">
+          <!-- Sample Site 1 -->
           <div class="works01 col-10 col-md-6 col-lg-4 mx-auto">
-            <a class="card-wrapper js-modal-open" href="">
+            <a class="card-wrapper js-modal-open" href="" data-target="modal01">
               <div class="card">
-                <div class="card-01"></div>
+                <div class="card-01 card-thumb"></div>
                 <h4>Sample Site 1</h4>
               </div>
             </a>
           </div>
-          <div class="modal js-modal">
+          <div id="modal01" class="modal js-modal">
             <div class="modal__bg js-modal-close"></div>
             <div class="modal__content">
               <div class="modal-header p-3">
@@ -134,35 +142,78 @@
               </div>
             </div>
           </div>
+          <!-- Sample Site 2 -->
           <div class="works02 col-10 col-md-6 col-lg-4 mx-auto">
-            <a class="card-wrapper" href="images/screencapture-test2.png" target="_blank">
+            <a class="card-wrapper js-modal-open" href="" data-target="modal02">
               <div class="card">
-                <div class="card-02"></div>
+                <div class="card-02 card-thumb"></div>
                 <h4>Sample Site 2</h4>
               </div>
             </a>
           </div>
+          <div id="modal02" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+              <div class="modal-header p-3">
+                <span>サンプルサイト 2</span>
+                <a class="js-modal-close" href=""><i class="fas fa-times"></i></a>
+              </div>
+              <img src="images/screencapture-test2.png" alt="サンプルサイト2">
+              <div class="modal-footer">
+                <a class="js-modal-close" href="">閉じる</a>
+              </div>
+            </div>
+          </div>
+          <!-- Sample Site 3 -->
           <div class="works03 col-10 col-md-6 col-lg-4 mx-auto">
-            <a class="card-wrapper" href="#page-works">
+            <a class="card-wrapper js-modal-open" href="" data-target="modal03">
               <div class="card">
-                <div class="card-03"></div>
-                <h4>作成中</h4>
+                <div class="card-03 card-thumb"></div>
+                <h4>Sample Site 3 <br>(Responsive)</h4>
               </div>
             </a>
           </div>
-          <div class="works03 col-10 col-md-6 col-lg-4 mx-auto">
-            <a class="card-wrapper" href="#page-works">
+          <div id="modal03" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+              <div class="modal-header p-3">
+                <span>サンプルサイト 3 (Responsive)</span>
+                <a class="js-modal-close" href=""><i class="fas fa-times"></i></a>
+              </div>
+              <img src="images/screencapture-test3-responsive.png" alt="サンプルサイト3 レスポンシブ">
+              <div class="modal-footer">
+                <a class="js-modal-close" href="">閉じる</a>
+              </div>
+            </div>
+          </div>
+          <!-- Sample Site 4 -->
+          <div class="works04 col-10 col-md-6 col-lg-4 mx-auto">
+            <a class="card-wrapper js-modal-open" href="" data-target="modal04">
               <div class="card">
-                <div class="card-03"></div>
-                <h4>作成中</h4>
+                <div class="card-04 card-thumb"></div>
+                <h4>Under construction</h4>
               </div>
             </a>
           </div>
-          <div class="works03 col-10 col-md-6 col-lg-4 mx-auto">
+          <div id="modal04" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+              <div class="modal-header p-3">
+                <span>Coming Soon...</span>
+                <a class="js-modal-close" href=""><i class="fas fa-times"></i></a>
+              </div>
+              <img src="images/dj_booth.JPG" alt="作成中">
+              <div class="modal-footer">
+                <a class="js-modal-close" href="">閉じる</a>
+              </div>
+            </div>
+          </div>
+          <!-- Sample Site 5 -->
+          <div class="works05 col-10 col-md-6 col-lg-4 mx-auto">
             <a class="card-wrapper" href="#page-works">
               <div class="card">
-                <div class="card-03"></div>
-                <h4>作成中</h4>
+                <div class="card-05 card-thumb"></div>
+                <h4>Under construction</h4>
               </div>
             </a>
           </div>
@@ -176,23 +227,23 @@
         <h2 class="section-title mb-5"><br>SKILS</h2>
         <div class="row">
           <div class="skil-logo fadein col-4 mb-3">
-            <img src="https://raw.githubusercontent.com/dj-kenbishi/yusuke_portfolio/4339121eb0e0de32b22c843b0b71c7fac8a434ec/Icon/icons8-html-5.svg" alt="html-5 logo"><br>
+            <img src="icon/icons8-html-5.svg" alt="html-5 logo"><br>
             <p>HTML</p>
           </div>
           <div class="skil-logo fadein col-4 mb-3">
-            <img src="https://raw.githubusercontent.com/dj-kenbishi/yusuke_portfolio/bf8e39c9f7d39de770896be67c6020b0aa5eb326/Icon/icons8-css3.svg" alt="css-3 logo">
+            <img src="icon/icons8-css3.svg" alt="css-3 logo">
             <p>CSS</p>
           </div>
           <div class="skil-logo fadein col-4 mb-3">
-            <img src="https://raw.githubusercontent.com/dj-kenbishi/yusuke_portfolio/e8e300671e62d32f360bb8171bfa2de72a358aae/Icon/icons8-%E3%83%96%E3%83%BC%E3%83%88%E3%82%B9%E3%83%88%E3%83%A9%E3%83%83%E3%83%97.svg" alt="bootstrap logo">
+            <img src="icon/icons8-ブートストラップ.svg" alt="bootstrap logo">
             <p>BootStrap</p>
           </div>
           <div class="skil-logo fadein col-4 mb-3">
-            <img src="https://raw.githubusercontent.com/dj-kenbishi/yusuke_portfolio/7f794baecaa8044eed40586e4ea5ba72cd7ab86b/Icon/icons8-javascript.svg" alt="javascript logo">
+            <img src="icon/icons8-javascript.svg" alt="javascript logo">
             <p>JavaScript</p>
           </div>
           <div class="skil-logo fadein col-4 mb-3">
-            <img class="jquery-svg" src="https://raw.githubusercontent.com/dj-kenbishi/yusuke_portfolio/df6bd708e5118cb990e396f5463f0b877d593ad2/Icon/icons8-jquery.svg" alt="jquery logo">
+            <img class="jquery-svg" src="icon/icons8-jquery.svg" alt="jquery logo">
             <p>jQuery</p>
           </div>
         </div>
@@ -208,8 +259,7 @@
           <br>
           茨城県にてWeb制作のフリーランスを目指しています。<br>
           <br>
-          お客様のご要望に添ったWebサイトを制作するため、SEOやリスティング広告などのWebマーケティング分野についても意欲的に学習を継続し、フロントエンドエンジニア ”プラスアルファ”
-          としてのスキルを磨き続けています。<br>
+          お客様のご要望に添ったWebサイトを制作するため、SEOやリスティング広告などのWebマーケティング分野についても意欲的に学習を継続し、フロントエンドエンジニア ”プラスアルファ” としてのスキルを磨き続けています。<br>
           <br>
           Webサイトを通じて人と人とがつながれるような環境構築のお手伝いができればと考えています。
         </p>
@@ -219,7 +269,6 @@
             <div class="pf-img mt-5">
               <div class="pf-img-mask"></div>
             </div>
-            <!-- <img src="images/profile.JPG" alt="profile画像"> -->
           </div>
           <div class="profile col-10 col-md-6 mb-5 px-2 mx-auto">
             <h3 class="h3">Profile</h3>
@@ -229,13 +278,14 @@
               出身 : 東京都西東京市 (茨城県在住)<br>
               趣味 : DJ , BeatMake , スケボー<br>
               <br>
-              西東京市(当時は保谷市)で生まれ育ち､26才の時に転勤で茨城県に移住し22年になります｡<br>
+              西東京市(当時は保谷市)で生まれ育ち､27才の時に転勤で茨城県に移住して21年になります｡<br>
               2人の娘の父です｡<br>
               <br>
               1990年代のストリートカルチャーに強く影響をうけ、今でも 90's の HipHop と R&B をよく聴いています。<br>
-              <a class="twitter" href="">
-                <p class="faa-wrench animated-hover">
-                  <i class="fab fa-twitter faa-wrench animated-hover fa-lg mt-3" style="color: #1DA1F2;"></i>
+              <br>
+              <a class="twitter" href="#page-about">
+                <p class="faa-parent animated-hover">
+                  <i class="fab fa-twitter faa-wrench fa-lg mt-3" style="color: #1DA1F2;"></i>
                   twitter (@dj_kenbishi)
                 </p>
               </a>
