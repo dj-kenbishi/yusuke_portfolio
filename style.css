@@ -370,6 +370,11 @@ Skils
   padding-top: 50px;
 }
 
+#page-skils .icons {
+  text-align: center;
+  font-size: 12px;
+}
+
 @media screen and (max-width: 559px) {
   .skil-logo img {
     width: 50px;
