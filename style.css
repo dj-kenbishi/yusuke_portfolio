@@ -521,9 +521,6 @@ textarea {
 }
 
 @media screen and (max-width: 559px) {
-  #page-contact {
-    background-size: auto 100%;
-  }
   .form {
     width: 100%;
   }
