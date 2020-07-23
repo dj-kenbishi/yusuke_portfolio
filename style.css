@@ -340,8 +340,7 @@ Works
   background: rgba(248, 248, 248, 0.9);
 }
 
-.modal-header span,
-.modal-footer .js-modal-close {
+.modal-header span {
   margin: 0 auto;
 }
 
