@@ -96,8 +96,8 @@ Header Image
 .h-bg-fixed img {
   width: 100%;
   height: 600px;
-  background-attachment: fixed;
   object-fit: cover;
+  font-family: 'object-fit:cover'; /* IE */
 }
 
 .h-bg-fixed p {
