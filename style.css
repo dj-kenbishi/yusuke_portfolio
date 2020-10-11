@@ -270,7 +270,6 @@ Works
 }
 
 .card:hover {
-  color: #0e36ca;
   box-shadow: 0 10px 20px #ccc;
   transform: translateY(-5px);
 }
@@ -292,11 +291,17 @@ Works
 }
 .card-04 {
   background-image: url(images/screencapture-test5-airbnb.png);
-  opacity: 0.5;
 }
 .card-05 {
   background-image: url(images/dj_booth_02_4mp.png);
   opacity: 0.5;
+}
+
+.card span {
+  color: #333;
+}
+.card:hover span {
+  text-decoration: none;
 }
 
 .card-thumb {
