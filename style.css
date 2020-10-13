@@ -222,7 +222,7 @@ Services
 }
 
 #page-services h2 {
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .service-icon {
@@ -270,6 +270,7 @@ Works
 }
 
 .card:hover {
+  text-decoration: none;
   box-shadow: 0 10px 20px #ccc;
   transform: translateY(-5px);
 }
@@ -278,6 +279,10 @@ Works
   margin-top: 20px;
   font-size: 18px;
   color: #0e36ca;
+}
+
+#page-works .card-discription {
+  text-align: center;
 }
 
 .card-01{
@@ -293,15 +298,12 @@ Works
   background-image: url(images/screencapture-test5-airbnb.png);
 }
 .card-05 {
-  background-image: url(images/dj_booth_02_4mp.png);
+  background-image: url(images/screencapture-airbnb-jp-work.png);
   opacity: 0.5;
 }
-
-.card span {
-  color: #333;
-}
-.card:hover span {
-  text-decoration: none;
+.card-06 {
+  background-image: url(images/dj_booth_02_4mp.png);
+  opacity: 0.5;
 }
 
 .card-thumb {
@@ -343,6 +345,10 @@ Works
 .modal-footer {
   width: 100%;
   background: rgba(248, 248, 248, 0.9);
+}
+
+.modal .link {
+  background: #fcfcfc;
 }
 
 .modal-header span {
